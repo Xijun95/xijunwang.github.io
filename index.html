@@ -155,6 +155,14 @@
             </tr>
           </tbody></table>
 
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px 16px 4px 16px;width:100%;vertical-align:middle">
+                <h3 style="font-size:1.25em; color:#555555;">Low-Light Enhancement and Denoising</h3>
+              </td>
+            </tr>
+          </tbody></table>
+
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
         <tr onmouseout="personalized_low_light()" onmouseover="personalized_low_light_start()" >
@@ -201,8 +209,17 @@
 		</p>
       </td>
     </tr>
+     </tbody></table>
 
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px 16px 4px 16px;width:100%;vertical-align:middle">
+                <h3 style="font-size:1.25em; color:#555555;">Blind Restoration</h3>
+              </td>
+            </tr>
+          </tbody></table>
 
+<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr onmouseout="blind_face()" onmouseover="blind_face_start()" >
       <td style="padding:16px;width:20%;vertical-align:middle">
           <div class="two" id='blind_face'><image  width=100% height=100% muted autoplay loop>
@@ -237,6 +254,59 @@
         <em>IEEE ICIP</em>, 2025
         <br>
         <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11084394">PDF</a>
+        <p></p>
+        <p>
+		</p>
+      </td>
+    </tr>
+
+    </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px 16px 4px 16px;width:100%;vertical-align:middle">
+                <h3 style="font-size:1.25em; color:#555555;">Atmospheric Turbulence Removal</h3>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr onmouseout="mamba_turb()" onmouseover="mamba_turb_start()" >
+      <td style="padding:16px;width:20%;vertical-align:middle">
+          <div class="two" id='mamba_turb'><image  width=100% height=100% muted autoplay loop>
+          <source src="images/mamba_turb.png" type="image/png">
+
+
+          </image></div>
+          <img src='images/mamba_turb.png' width="160">
+        <script type="text/javascript">
+<!--          function bolt3d_start() {-->
+<!--            document.getElementById('mamba_turb').style.opacity = "1";-->
+<!--          }-->
+
+          function mamba_turb() {
+            document.getElementById('mamba_turb').style.opacity = "0";
+          }
+          mamba_turb()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/pdf/2504.02697">
+          <span class="papertitle">Learning Phase Distortion with Selective State Space Models for Video Turbulence Mitigation</span>
+        </a>
+        <br>
+        Xingguang Zhang,
+        Nicholas Chimitt,
+        <strong>Xijun Wang</strong>,
+        Yu Yuan,
+        Stanley H. Chan
+        <br>
+        <em>CVPR <strong>(Highlight)</strong></em>, 2025
+        <br>
+        <a href="https://xg416.github.io/MambaTM/">project page</a>
+        /
+        <a href="https://arxiv.org/pdf/2504.02697">PDF</a>
         <p></p>
         <p>
 		</p>
@@ -282,86 +352,6 @@
       </td>
     </tr>
 
-    <tr onmouseout="mamba_turb()" onmouseover="mamba_turb_start()" >
-      <td style="padding:16px;width:20%;vertical-align:middle">
-          <div class="two" id='mamba_turb'><image  width=100% height=100% muted autoplay loop>
-          <source src="images/mamba_turb.png" type="image/png">
-
-
-          </image></div>
-          <img src='images/mamba_turb.png' width="160">
-        <script type="text/javascript">
-<!--          function bolt3d_start() {-->
-<!--            document.getElementById('mamba_turb').style.opacity = "1";-->
-<!--          }-->
-
-          function mamba_turb() {
-            document.getElementById('mamba_turb').style.opacity = "0";
-          }
-          mamba_turb()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://arxiv.org/pdf/2504.02697">
-          <span class="papertitle">Learning Phase Distortion with Selective State Space Models for Video Turbulence Mitigation</span>
-        </a>
-        <br>
-        Xingguang Zhang,
-        Nicholas Chimitt,
-        <strong>Xijun Wang</strong>,
-        Yu Yuan,
-        Stanley H. Chan
-        <br>
-        <em>CVPR <strong>(Highlight)</strong></em>, 2025
-        <br>
-        <a href="https://xg416.github.io/MambaTM/">project page</a>
-        /
-        <a href="https://arxiv.org/pdf/2504.02697">PDF</a>
-        <p></p>
-        <p>
-		</p>
-      </td>
-    </tr>
-
-    <tr onmouseout="SA_loss()" onmouseover="SA_loss_start()" >
-      <td style="padding:16px;width:20%;vertical-align:middle">
-          <div class="two" id='SA_loss'><image  width=100% height=100% muted autoplay loop>
-          <source src="images/SA_loss.png" type="image/png">
-
-
-          </image></div>
-          <img src='images/SA_loss.png' width="160">
-        <script type="text/javascript">
-<!--          function bolt3d_start() {-->
-<!--            document.getElementById('SA_loss').style.opacity = "1";-->
-<!--          }-->
-
-          function SA_loss() {
-            document.getElementById('SA_loss').style.opacity = "0";
-          }
-          SA_loss()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://ieeexplore.ieee.org/abstract/document/11031451">
-          <span class="papertitle">Spatially-Aware Loss Functions for GAN-Driven Super-Resolution</span>
-        </a>
-        <br>
-        <strong>Xijun Wang</strong>,
-        Santiago López-Tapia,
-        Xinyi Wu,
-        Rafael Molina,
-        Aggelos K. Katsaggelos
-        <br>
-        <em>IEEE Access</em>, 2025
-        <br>
-        <a href="https://ieeexplore.ieee.org/abstract/document/11031451">PDF</a>
-        <p></p>
-        <p>
-		</p>
-      </td>
-    </tr>
-
     <tr onmouseout="real_turb()" onmouseover="real_turb_start()" >
       <td style="padding:16px;width:20%;vertical-align:middle">
           <div class="two" id='real_turb'><image  width=100% height=100% muted autoplay loop>
@@ -399,43 +389,44 @@
       </td>
     </tr>
 
-    <tr onmouseout="temporal_vsr()" onmouseover="temporal_vsr_start()" >
+
+        <tr onmouseout="variational_turb_access()" onmouseover="variational_turb_access_start()" >
       <td style="padding:16px;width:20%;vertical-align:middle">
-          <div class="two" id='temporal_vsr'><image  width=100% height=100% muted autoplay loop>
-          <source src="images/temporal_vsr.png" type="image/png">
+          <div class="two" id='variational_turb_access'><image  width=100% height=100% muted autoplay loop>
+          <source src="images/variational_turb_access.png" type="image/png">
 
 
           </image></div>
-          <img src='images/temporal_vsr.png' width="160">
+          <img src='images/variational_turb_access.png' width="160">
         <script type="text/javascript">
 <!--          function bolt3d_start() {-->
-<!--            document.getElementById('temporal_vsr').style.opacity = "1";-->
+<!--            document.getElementById('variational_turb_access').style.opacity = "1";-->
 <!--          }-->
 
-          function temporal_vsr() {
-            document.getElementById('temporal_vsr').style.opacity = "0";
+          function variational_turb_access() {
+            document.getElementById('variational_turb_access').style.opacity = "0";
           }
-          temporal_vsr()
+          variational_turb_access()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://ieeexplore.ieee.org/abstract/document/10539094">
-          <span class="papertitle">Real-Time Lightweight Video Super-Resolution With RRED-Based Perceptual Constraint</span>
+        <a href="https://ieeexplore.ieee.org/document/10666503">
+          <span class="papertitle">Video Variational Deep Atmospheric Turbulence Correction</span>
         </a>
         <br>
-        Xinyi Wu,
         Santiago López-Tapia,
         <strong>Xijun Wang</strong>,
         Aggelos K. Katsaggelos
         <br>
-        <em>IEEE TCSVT</em>, 2024
+        <em>IEEE Access</em>, 2024
         <br>
-        <a href="https://ieeexplore.ieee.org/abstract/document/10539094">PDF</a>
+        <a href="https://ieeexplore.ieee.org/document/10666503">PDF</a>
         <p></p>
         <p>
 		</p>
       </td>
     </tr>
+
 
     <tr onmouseout="variational_turb()" onmouseover="variational_turb_start()" >
       <td style="padding:16px;width:20%;vertical-align:middle">
@@ -465,7 +456,7 @@
         <strong>Xijun Wang</strong>,
         Aggelos K. Katsaggelos
         <br>
-        <em>IEEE ICIP</em>, 2024
+        <em>IEEE ICIP</em>, 2023
         <br>
         <a href="https://ieeexplore.ieee.org/abstract/document/10222374">PDF</a>
         <p></p>
@@ -511,42 +502,94 @@
       </td>
     </tr>
 
-    <tr onmouseout="mri_gan()" onmouseover="mri_gan_start()" >
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px 16px 4px 16px;width:100%;vertical-align:middle">
+                <h3 style="font-size:1.25em; color:#555555;">Super-Resolution</h3>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr onmouseout="SA_loss()" onmouseover="SA_loss_start()" >
       <td style="padding:16px;width:20%;vertical-align:middle">
-          <div class="two" id='mri_gan'><image  width=100% height=100% muted autoplay loop>
-          <source src="images/mri_gan.png" type="image/png">
+          <div class="two" id='SA_loss'><image  width=100% height=100% muted autoplay loop>
+          <source src="images/SA_loss.png" type="image/png">
 
 
           </image></div>
-          <img src='images/mri_gan.png' width="160">
+          <img src='images/SA_loss.png' width="160">
         <script type="text/javascript">
 <!--          function bolt3d_start() {-->
-<!--            document.getElementById('mri_gan').style.opacity = "1";-->
+<!--            document.getElementById('SA_loss').style.opacity = "1";-->
 <!--          }-->
 
-          function mri_gan() {
-            document.getElementById('mri_gan').style.opacity = "0";
+          function SA_loss() {
+            document.getElementById('SA_loss').style.opacity = "0";
           }
-          mri_gan()
+          SA_loss()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12088/120880H/Motion-artifact-reduction-in-abdominal-MRIs-using-generative-adversarial-networks/10.1117/12.2605824.full">
-          <span class="papertitle">Motion artifact reduction in abdominal MRIs using generative adversarial networks with perceptual similarity loss</span>
+        <a href="https://ieeexplore.ieee.org/abstract/document/11031451">
+          <span class="papertitle">Spatially-Aware Loss Functions for GAN-Driven Super-Resolution</span>
         </a>
         <br>
-        Yunan Wu<sup>1</sup>,
-        <strong>Xijun Wang</strong><sup>1</sup>,
-        Aggelos K. Katsaggelos (<sup>1</sup>Joint first author)
+        <strong>Xijun Wang</strong>,
+        Santiago López-Tapia,
+        Xinyi Wu,
+        Rafael Molina,
+        Aggelos K. Katsaggelos
         <br>
-        <em>International Symposium on Medical Information Processing and Analysis <strong>(Oral)</strong></em>, 2021
+        <em>IEEE Access</em>, 2025
         <br>
-        <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12088/120880H/Motion-artifact-reduction-in-abdominal-MRIs-using-generative-adversarial-networks/10.1117/12.2605824.full">PDF</a>
+        <a href="https://ieeexplore.ieee.org/abstract/document/11031451">PDF</a>
         <p></p>
         <p>
 		</p>
       </td>
     </tr>
+
+
+    <tr onmouseout="temporal_vsr()" onmouseover="temporal_vsr_start()" >
+      <td style="padding:16px;width:20%;vertical-align:middle">
+          <div class="two" id='temporal_vsr'><image  width=100% height=100% muted autoplay loop>
+          <source src="images/temporal_vsr.png" type="image/png">
+
+
+          </image></div>
+          <img src='images/temporal_vsr.png' width="160">
+        <script type="text/javascript">
+<!--          function bolt3d_start() {-->
+<!--            document.getElementById('temporal_vsr').style.opacity = "1";-->
+<!--          }-->
+
+          function temporal_vsr() {
+            document.getElementById('temporal_vsr').style.opacity = "0";
+          }
+          temporal_vsr()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://ieeexplore.ieee.org/abstract/document/10539094">
+          <span class="papertitle">Real-Time Lightweight Video Super-Resolution With RRED-Based Perceptual Constraint</span>
+        </a>
+        <br>
+        Xinyi Wu,
+        Santiago López-Tapia,
+        <strong>Xijun Wang</strong>,
+        Aggelos K. Katsaggelos
+        <br>
+        <em>IEEE TCSVT</em>, 2024
+        <br>
+        <a href="https://ieeexplore.ieee.org/abstract/document/10539094">PDF</a>
+        <p></p>
+        <p>
+		</p>
+      </td>
+    </tr>
+
 
     <tr onmouseout="semantic_vsr()" onmouseover="semantic_vsr_start()" >
       <td style="padding:16px;width:20%;vertical-align:middle">
@@ -669,8 +712,51 @@
       </td>
     </tr>
 
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px 16px 4px 16px;width:100%;vertical-align:middle">
+                <h3 style="font-size:1.25em; color:#555555;">Motion Blur Removal</h3>
+              </td>
+            </tr>
           </tbody></table>
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr onmouseout="mri_gan()" onmouseover="mri_gan_start()" >
+      <td style="padding:16px;width:20%;vertical-align:middle">
+          <div class="two" id='mri_gan'><image  width=100% height=100% muted autoplay loop>
+          <source src="images/mri_gan.png" type="image/png">
 
+
+          </image></div>
+          <img src='images/mri_gan.png' width="160">
+        <script type="text/javascript">
+<!--          function bolt3d_start() {-->
+<!--            document.getElementById('mri_gan').style.opacity = "1";-->
+<!--          }-->
+
+          function mri_gan() {
+            document.getElementById('mri_gan').style.opacity = "0";
+          }
+          mri_gan()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12088/120880H/Motion-artifact-reduction-in-abdominal-MRIs-using-generative-adversarial-networks/10.1117/12.2605824.full">
+          <span class="papertitle">Motion artifact reduction in abdominal MRIs using generative adversarial networks with perceptual similarity loss</span>
+        </a>
+        <br>
+        Yunan Wu<sup>1</sup>,
+        <strong>Xijun Wang</strong><sup>1</sup>,
+        Aggelos K. Katsaggelos (<sup>1</sup>Joint first author)
+        <br>
+        <em>International Symposium on Medical Information Processing and Analysis <strong>(Oral)</strong></em>, 2021
+        <br>
+        <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12088/120880H/Motion-artifact-reduction-in-abdominal-MRIs-using-generative-adversarial-networks/10.1117/12.2605824.full">PDF</a>
+        <p></p>
+        <p>
+		</p>
+      </td>
+    </tr>
+</tbody></table>
 
                      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
@@ -740,7 +826,7 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="avian_solar()" onmouseover="gen_photo_start()" >
+    <tr onmouseout="avian_solar()" onmouseover="avian_solar_start()" >
       <td style="padding:16px;width:20%;vertical-align:middle">
           <div class="two" id='avian_solar'><image  width=100% height=100% muted autoplay loop>
           <source src="images/avian_solar.png" type="image/png">
@@ -815,6 +901,7 @@
     </tr>
 
      </tbody></table>
+
 
 
 
